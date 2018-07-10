@@ -1,3 +1,6 @@
 windows_container:
   image: cirrusci/windowsservercore:2016
-  script: echo ERFOLG
+  
+echo_task:      
+  echo_script: echo ERFOLG
+
