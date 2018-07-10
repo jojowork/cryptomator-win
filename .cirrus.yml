@@ -2,5 +2,7 @@ windows_container:
   image: cirrusci/windowsservercore:2016
   
 echo_task:      
-  echo_script: echo ERFOLG
+  echo_script: 
+    - powershell -Command "(New-Object Net.WebClient).DownloadFile('http://jrsoftware.org/download.php/is.exe', 'is.exe')"
+    - .\is.exe
 
