@@ -4,8 +4,7 @@ windows_container:
 download_innosetup_task:      
   download_script: 
     - powershell -Command "(New-Object Net.WebClient).DownloadFile('http://jrsoftware.org/download.php/is.exe', 'is.exe')"
-    - .\is.exe
 
 check_java_task:      
   download_script: 
-    - java --version
+    - powershell -Command "(New-Object Net.WebClient).DownloadFile('http://javadl.oracle.com/webapps/download/AutoDL?BundleId=233172_512cd62ec5174c3487ac17c61aaa89e8', 'jre.exe')"
