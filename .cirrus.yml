@@ -1,0 +1,3 @@
+windows_container:
+  image: cirrusci/windowsservercore:2016
+  script: echo ERFOLG
